@@ -1,19 +1,19 @@
 package collection;
-import java.util.ArrayList;
-import java.util.Collection;
+import java.util.*;
+
 
 public class Array {
  public static void main(String[] args) {
   
-  Collection<Integer> num = new ArrayList<Integer>();
-  num.add(10);
-  num.add(38);
-  num.add(30);
-  num.add(13);
-  num.add(20);
+  Map<String,Integer> num = new HashMap<String,Integer>();
+  
+  num.put("Munna", 23);
+   num.put("Kani", 29);
+    num.put("ajay", 2302);
+     num.put("vijay", 233);
 
-  for(int i:num){
-    System.out.println(i);
+  for(String key: num.keySet()){
+    System.out.println(key+":"+num.get(key));
   }
 
  }
